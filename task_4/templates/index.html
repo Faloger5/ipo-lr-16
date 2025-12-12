@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет стоимости доставки</title>
+</head>
+<body>
+    <h1>Загрузка заказов</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label>Файл (.xlsx):</label>
+        <input type="file" name="file" required><br><br>
+        
+        <label>Стоимость за 1 км:</label>
+        <input type="number" name="cost_per_km" step="0.01" required><br><br>
+        
+        <button type="submit">Рассчитать</button>
+    </form>
+</body>
+</html>
 
